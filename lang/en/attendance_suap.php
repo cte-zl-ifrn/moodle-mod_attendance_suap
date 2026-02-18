@@ -102,3 +102,6 @@ $string['error_nomodules'] = 'No modules configured';
 
 // Tasks.
 $string['notificationtask'] = 'Send attendance notifications';
+
+// Help.
+$string['tendencia_threshold_help'] = 'Threshold value (0-1) for notification trigger. If a student\'s current progress is below this threshold multiplied by the expected progress, they will receive a notification. Default is 0.90 (90%).';

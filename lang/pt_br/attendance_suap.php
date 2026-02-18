@@ -102,3 +102,6 @@ $string['error_nomodules'] = 'Nenhum módulo configurado';
 
 // Tasks.
 $string['notificationtask'] = 'Enviar notificações de frequência';
+
+// Help.
+$string['tendencia_threshold_help'] = 'Valor limite (0-1) para disparo de notificação. Se o progresso atual de um aluno estiver abaixo desse limite multiplicado pelo progresso esperado, ele receberá uma notificação. O padrão é 0.90 (90%).';

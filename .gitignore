@@ -1,0 +1,30 @@
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Moodle
+/moodledata/
+/config.php
+
+# Build artifacts
+node_modules/
+vendor/
+composer.lock
+package-lock.json
+
+# Test artifacts
+/tests/behat/output/
+/tests/phpunit/
+coverage/
+
+# Temporary files
+*.tmp
+*.log
+.cache/
