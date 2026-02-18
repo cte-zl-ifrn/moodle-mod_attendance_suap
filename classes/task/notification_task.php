@@ -63,9 +63,9 @@ class notification_task extends \core\task\scheduled_task {
     /**
      * Process notifications for a specific attendance instance
      *
-     * @param stdClass $attendance
+     * @param \stdClass $attendance
      */
-    private function process_attendance_notifications($attendance) {
+    private function process_attendance_notifications(\stdClass $attendance) {
         global $DB;
 
         $course = $DB->get_record('course', ['id' => $attendance->course]);
@@ -115,13 +115,13 @@ class notification_task extends \core\task\scheduled_task {
     /**
      * Check progress for a specific student
      *
-     * @param stdClass $student
-     * @param stdClass $attendance
+     * @param \stdClass $student
+     * @param \stdClass $attendance
      * @param int $totallessons
      * @param float $dayspassed
      * @param float $totaldays
      */
-    private function check_student_progress($student, $attendance, $totallessons, $dayspassed, $totaldays) {
+    private function check_student_progress(\stdClass $student, \stdClass $attendance, int $totallessons, float $dayspassed, float $totaldays) {
         global $DB;
 
         // Count completed lessons.
@@ -148,12 +148,12 @@ class notification_task extends \core\task\scheduled_task {
     /**
      * Send notification to student
      *
-     * @param stdClass $student
-     * @param stdClass $attendance
+     * @param \stdClass $student
+     * @param \stdClass $attendance
      * @param int $current
      * @param float $expected
      */
-    private function send_notification($student, $attendance, $current, $expected) {
+    private function send_notification(\stdClass $student, \stdClass $attendance, int $current, float $expected) {
         $message = new \core\message\message();
         $message->component = 'mod_attendance_suap';
         $message->name = 'notification';

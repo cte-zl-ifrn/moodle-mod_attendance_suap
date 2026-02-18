@@ -65,7 +65,7 @@ $string['module'] = 'Module';
 $string['addmodule'] = 'Add module';
 $string['deletemodule'] = 'Remove module';
 $string['selectmodule'] = 'Select activity/resource';
-$string['confirmdeletemodul'] = 'Are you sure you want to remove this module?';
+$string['confirmdeletemodule'] = 'Are you sure you want to remove this module?';
 
 // Progress.
 $string['progress'] = 'Progress';
